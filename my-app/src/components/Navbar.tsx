@@ -23,14 +23,15 @@ export default function Navbar() {
     }
 
     return (
-        <div>
+        <header className="Header">
+            <img src="../public/logo192.png" className="Logo" alt="logo"/>
             <ul id="nav">
                 <li><a href="#" onClick={loveTheme}>Kjærleik</a></li>
                 <li><a href="#" onClick={happyTheme}>God stemning</a></li>
                 <li><a href="#" onClick={sadTheme}>Trist</a></li>
                 <li><a href="#" onClick={summerTheme}>Sommer</a></li>
               </ul>
-        </div>
+        </header>
     )
 }
 
