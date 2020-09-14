@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import logo from './logo.svg';
-import CSS from 'csstype';
 
 
 export default function Header(): React.ReactElement {
@@ -31,33 +29,31 @@ export default function Header(): React.ReactElement {
     const toggleNav = () => {
         setIsNavVisible(!isNavVisible);
     };
+
     
     return (
-        <header className="Header">
-            <img src={require("../pictures/logo192.png")} className="Logo" alt="logo"/>
-            {(!isSmallScreen || isNavVisible) && (
-            <nav className="Nav">
-                <a href="#">XXXX</a>
-                <a href="#">XXXX</a>
-                <a href="#">XXXX</a>
-                <button>Lagre</button>
-            </nav>
-            )}
-            <button onClick={toggleNav} className="Lion">&#129409;</button>
-            
-        </header>
+        <div className="grid-container">
+            <div className="Navbar">
+                <img src={require("../pictures/logo192.png")} className="Logo" alt="logo"/>
+                {(!isSmallScreen || isNavVisible) && (
+                <nav className="Nav">
+                    <a href="#">&#128150;</a>
+                    <a href="#">&#128011;</a>
+                    <a href="#">&#128526;</a>
+                    <button>Lagre</button>
+                </nav>
+                )}
+                <button onClick={toggleNav} className="Lion">&#129409;</button>
+            </div>
+            <div className="Title">
+                <h1>Kul utstilling bro</h1>
+            </div>
+        </div>
     )
 }
 
-/*
-const headerStyle: CSS.Properties = {
-    textAlign: 'center',
-    fontFamily: 'Brush Script MT, Brush Script Std, cursive',
-    fontSize: '300%',
-    borderBottom: '5px solid red'
-}
 
-*/
+
 
 
 

@@ -1,4 +1,18 @@
-.Header {
+.grid-container {
+    display: grid;
+    grid-column-gap: auto;
+    grid-template-columns: auto;
+}
+
+.Title {
+    margin-top: 70px;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+}
+
+
+.Navbar {
     position: fixed;
     top: 0;
     max-height: 70px;
@@ -8,8 +22,7 @@
     grid-template-areas: "logo nav";
 
     background-color: #41444b;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .Logo {
@@ -32,7 +45,7 @@
 
 .Nav a {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     transition: 0.5s;
     text-decoration: none;
@@ -84,7 +97,7 @@
 
 
 @media (max-width: 700px) {
-    .Header {
+    .Navbar {
         grid-template-areas: "logo lion" "nav nav";
     }
     .Nav  {
