@@ -5,10 +5,11 @@
 }
 
 .Title {
-    margin-top: 70px;
+    margin-top: 100px;
     text-align: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 40px;
+    height: 500px;
 }
 
 
@@ -21,7 +22,6 @@
     display: grid; /*generates block level grid*/
     grid-template-areas: "logo nav";
 
-    background-color: #41444b;
     box-shadow: 0 4px 8px 0 #00000033;
 }
 
@@ -43,23 +43,42 @@
     justify-items: center;
 }
 
-.Nav a {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.Nav a:hover {
-    transform: scale(2.0);
-}
-
-.Nav button {
+.theme {
     padding: 10px;
     outline: none;
     border: none;
     font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+#love {
+    background-color: pink;
+}
+
+#whale {
+    background-color: lightblue;
+}
+
+#sun {
+    background-color: lightyellow;
+}
+
+.theme:hover {
+    transform: scale(1.4);
+}
+
+.save {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
     color: white;
     font-weight: 600;
     background-color: rgba(33, 233, 27, 0.5);
@@ -69,12 +88,12 @@
     transition: 70ms;
 }
 
-.Nav button:hover {
+.save:hover {
     background-color: rgba(247, 9, 227, 0.5);
     box-shadow: 0px 5px 0px 0px rgba(247, 9, 227, 0.5);
 }
 
-.Nav button:active {
+.save:active {
     transform: translateY(5px);
 }
 
@@ -106,7 +125,7 @@
         grid-row-gap: 20px;
 
         padding: 30px 0 30px;
-        background-color: #41444b;
+        background-color: #8FBC8F;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
