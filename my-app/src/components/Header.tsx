@@ -17,7 +17,6 @@ export default function Header(props : any): React.ReactElement {
         };
     }, []);
 
-
     const handleMediaQueryChange = (mediaQuery : any) => {
         if (mediaQuery.matches) {
             setIsSmallScreen(true);
@@ -41,14 +40,19 @@ export default function Header(props : any): React.ReactElement {
     }
 
     const handleSunClick = () => {
-        document.body.style.background = "lightyellow url('summer.svg') no-repeat 50% 100%"
+        document.body.style.background = "lightyellow url('summer.svg') no-repeat 50% 75%"
         document.body.style.color = "orange"
+    }
+
+    const handleLogoClick = () => {
+        document.body.style.background = "white url('artist.svg') no-repeat 50% 70%"
+        document.body.style.color = "black"
     }
 
     return (
         <div className="grid-container">
             <div className="Navbar">
-                <img src={require("../pictures/logo192.png")} className="Logo" alt="logo"/>
+                <img src={require("../pictures/logo192.png")} className="Logo" alt="logo" onClick={handleLogoClick}/>
                 {(!isSmallScreen || isNavVisible) && (
                 <nav className="Nav">
                     <button className="theme" id="love" onClick={handleLoveClick}>&#128150;</button>

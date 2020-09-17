@@ -6,11 +6,10 @@ import './App.css';
 
 export default class App extends React.Component {
 
-  
 
   render() {
     return (
-      <div className="App" data-observe-resizes>
+      <div className="App" data-observe-resize>
         <Header />
       </div>
     );
