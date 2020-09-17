@@ -1,0 +1,138 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: auto;
+    grid-template-columns: auto;
+}
+
+.Title {
+    margin-top: 100px;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    height: 500px;
+}
+
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    max-height: 70px;
+    width: 100vw;
+
+    display: grid; /*generates block level grid*/
+    grid-template-areas: "logo nav";
+
+    box-shadow: 0 4px 8px 0 #00000033;
+}
+
+.Logo {
+    grid-area: logo;
+    height: 70px;
+    transition: 1s;
+}
+
+.Logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.Nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.theme {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+#love {
+    background-color: pink;
+}
+
+#whale {
+    background-color: lightblue;
+}
+
+#sun {
+    background-color: lightyellow;
+}
+
+.theme:hover {
+    transform: scale(1.4);
+}
+
+.save {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(33, 233, 27, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(33, 233, 27, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+}
+
+.save:hover {
+    background-color: rgba(247, 9, 227, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(247, 9, 227, 0.5);
+}
+
+.save:active {
+    transform: translateY(5px);
+}
+
+.Lion {
+    display: none;
+    grid-area: lion;
+    margin: 0 20px 0 0;
+    padding: 0;
+    justify-self: end;
+    font-size: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.1s;
+}
+
+.Lion:active {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 700px) {
+    .Navbar {
+        grid-template-areas: "logo lion" "nav nav";
+    }
+    .Nav  {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+
+        padding: 30px 0 30px;
+        background-color:ghostwhite;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+    }
+    .Lion {
+        display: block;
+    }
+}
