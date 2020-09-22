@@ -4,9 +4,9 @@ import './Frame.css';
 export default class ImageSlider extends React.Component {
     state = {
         images: [
-            "/amigo.jpg",
-            "/blubbe.jpg",
-            "/Carol.jpeg"
+            "/whale.svg",
+            "/summer.svg",
+            "/heart.svg"
 
         ],
         index: 0
@@ -28,16 +28,19 @@ export default class ImageSlider extends React.Component {
     }
 
     render() {
-        return <div className="container">
-            <img
-                className="pic"
-                src={this.state.images[this.state.index]}
-                alt="" />
-            <p>Halla</p>
-            <button onClick={this.handleNext}> Bilde </button>
+        return (
+            <div>
+                <div className="container frame">
+                    <img
+                        className="image"
+                        src={this.state.images[this.state.index]}
+                        alt="" />
+                    <p className="p">Halla</p>
 
-
-        </div>
+                </div>
+                <button onClick={this.handleNext}> Bilde </button>
+            </div>
+        )
     }
 
 };
