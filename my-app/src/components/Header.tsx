@@ -6,6 +6,17 @@ export default function Header(props: any): React.ReactElement {
 
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [background, setBackground] = useState<string>(localStorage.getItem("background") || "");
+    const [color, setColor] = useState<string>(props.color);
+
+    useEffect(() => 
+        setBackground(background), [background]);
+    
+    useEffect(() => {
+        document.body.style.background = background;
+        document.body.style.color = color;
+        }, [background, color]);
+    
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 700px)");
@@ -30,24 +41,31 @@ export default function Header(props: any): React.ReactElement {
     };
 
     const handleLoveClick = () => {
-        document.body.style.background = "pink url('heart.svg') no-repeat 50% 25%"
-        document.body.style.color = "red"
+        setBackground("pink url('heart.svg') no-repeat 50% 25%")
+        setColor("red");
     }
 
     const handleWhaleClick = () => {
-        document.body.style.background = "lightblue url('whale.svg') no-repeat 50% 40%"
-        document.body.style.color = "blue"
+        setBackground("lightblue url('whale.svg') no-repeat 50% 40%")
+        setColor("blue");  
     }
 
     const handleSunClick = () => {
-        document.body.style.background = "lightyellow url('summer.svg') no-repeat 50% 40%"
-        document.body.style.color = "orange"
+        setBackground("lightyellow url('summer.svg') no-repeat 50% 40%")
+        setColor("orange")
+        
     }
 
     const handleLogoClick = () => {
-        document.body.style.background = "white url('artist.svg') no-repeat 50% 40%"
-        document.body.style.color = "black"
+        setBackground("white url('artist.svg') no-repeat 50% 40%")
+        setColor("black")
     }
+
+    const handleSaveClick = () => {
+        localStorage.setItem("background", background);
+    }
+
+
 
     return (
         <div className="grid-container">
@@ -58,7 +76,7 @@ export default function Header(props: any): React.ReactElement {
                         <button className="theme" id="love" onClick={handleLoveClick}>&#128150;</button>
                         <button className="theme" id="whale" onClick={handleWhaleClick}>&#128011;</button>
                         <button className="theme" id="sun" onClick={handleSunClick}>&#128526;</button>
-                        <button className="save">Lagre</button>
+                        <button className="save" onClick={handleSaveClick}>Lagre</button>
                     </nav>
                 )}
                 <button onClick={toggleNav} className="Lion">&#129409;</button>
