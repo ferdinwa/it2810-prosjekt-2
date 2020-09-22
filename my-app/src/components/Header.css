@@ -23,11 +23,10 @@
     top: 0;
     max-height: 70px;
     width: 100vw;
-
     display: grid; /*generates block level grid*/
     grid-template-areas: "logo nav";
-
     box-shadow: 0 4px 8px 0 #00000033;
+    z-index: 10;
 }
 
 .Logo {

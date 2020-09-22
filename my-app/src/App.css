@@ -5,5 +5,11 @@
     flex-direction: column;
 }
 
-
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 400px;
+    justify-content: center;
+    grid-row-gap: 40px;
+}
 
