@@ -22,23 +22,23 @@ export default class App extends React.Component<{}, {color : string, background
   }
 
 handleLoveClick() {
-    this.setState({background: "pink url('heart.svg') no-repeat 50% 25%"});
+    this.setState({background: "pink"});
     this.setState({ color: "red"});
 }
 
 handleWhaleClick() {
-    this.setState({ background: "lightblue url('whale.svg') no-repeat 50% 40%"});
+    this.setState({ background: "lightblue"});
     this.setState({ color:  "blue"});  
 }
 
 handleSunClick() {
-    this.setState({ background: "lightyellow url('summer.svg') no-repeat 50% 40%"});
+    this.setState({ background: "lightyellow"});
     this.setState({ color: "orange"})
 }
 
 handleLogoClick() {
     let titles = ["Kul utstilling" ,"Skikkelig kul","Den var fin","Megastilig greie"]
-    this.setState({ background: "white url('artist.svg') no-repeat 50% 40%"});
+    this.setState({ background: "white"});
     this.setState({ color: "black"})
     if(this.state.title === titles[0]) {
       this.setState({title: titles[1]})
