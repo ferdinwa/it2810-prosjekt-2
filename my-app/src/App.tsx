@@ -116,6 +116,7 @@ export default class App extends React.Component<{}, AppState>  {
     localStorage.setItem("color", this.state.color);
     localStorage.setItem("title", this.state.title)
   }
+
   render() {
     return (
       <div className="App" data-observe-resize>
@@ -130,11 +131,16 @@ export default class App extends React.Component<{}, AppState>  {
           handleSunClick={this.handleSunClick}
         />
         <div className="container">
-          <div className="img">
-            <ImageSlider display={this.state.displayed_picture} index={this.state.image_index} imageHandleClick={this.imageHandleClick} />
+          <div className="wrapper">
+
+            <div>
+              <ImageSlider display={this.state.displayed_picture} index={this.state.image_index} imageHandleClick={this.imageHandleClick} />
+            </div>
           </div>
-          <div className="text">
-            <TextSlider index={this.state.text_index} textHandleClick={this.textHandleClick} />
+          <div className="wrapper">
+            <div >
+              <TextSlider index={this.state.text_index} textHandleClick={this.textHandleClick} />
+            </div>
           </div>
         </div>
       </div>

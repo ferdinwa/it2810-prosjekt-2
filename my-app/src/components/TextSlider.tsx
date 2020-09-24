@@ -1,15 +1,17 @@
 import React from "react"
 /*import { stringify } from "querystring";*/
+import './Slider.css'
 
 
 interface TextSliderProps {
     textHandleClick: () => void;
     index: number;
+
 }
 
 interface TextSliderState {
-    poems: string[];
-    index: number;
+    text: string[];
+
 }
 
 export default class textSlider extends React.Component<any, TextSliderProps, TextSliderState> {
@@ -18,7 +20,7 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
         "https://poetrydb.org/title/The words the happy say/.json",
         "https://poetrydb.org/title/The Life we have is very great./.json"
     ]
-    poemsDone = [] as any;
+
     data = [] as string[][];
 
 
@@ -28,11 +30,9 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
             fetch(this.poems[i])
                 .then((response) => response.json())
                 .then((result) => {
-                    console.log(result[0].lines)
                     this.data.push(result[0].lines)
                 });
         }
-        console.log(this.data)
     };
 
     makeText(index: number) {
@@ -46,16 +46,21 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
 
 
     render() {
-
         return (
             <div>
-
-                {this.makeText(this.props.index)}
-                <button onClick={this.props.textHandleClick}> Tekst </button>
+                <div className="wrap">
+                    <div className="poem"> {this.makeText(this.props.index)} </div>
+                </div>
+                <div>
+                    <button onClick={this.props.textHandleClick} className="textbutton" > Tekst </button>
+                </div>
             </div>
         )
     }
-
 }
+
+
+
+
 
 
