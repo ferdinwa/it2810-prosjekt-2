@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="453">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
 <path d="M140 20C73 20 20 74 20 140c0 135 136 170 228 303 88-132 229-173 229-303 0-66-54-120-120-120-48 0-90 28-109 69-19-41-60-69-108-69z" stroke="red" stroke-width="10" fill="none"/>
-<animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="scale"
-                          from="1 1"
-                          to="0.8 0.8"
-                          dur="1s"
-						  repeatCount="3"
-                          />
+<animateColor attributeName="fill" attributeType="XML"
+        from="red" to="blue" dur="6s" repeatCount="indefinite"/>
 </svg>

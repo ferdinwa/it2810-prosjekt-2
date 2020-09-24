@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="300px" height="300px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg width="500" height="500" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1913" enable-background="new 0 0 1920 1913" xml:space="preserve">
 <g>
 	<path fill="#FAEE29" stroke="#FAEE29" stroke-width="0.0938" d="M801.91,40.95c28.19,17.91,55.22,37.84,80.82,59.25
@@ -1386,12 +1386,5 @@
 	<path fill="#FCFD7A" stroke="#FCFD7A" stroke-width="0.0938" d="M1087.67,1788.28c2.9099-0.16,3.33,4.7,4.21,6.87
 		C1090.25,1792.97,1088.9301,1790.61,1087.67,1788.28z"/>
 </g>
-<animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          from="0 0 0"
-                          to="360 0 0"
-                          dur="8s"
-						  repeatCount="1"
-                          />
 </svg>
+

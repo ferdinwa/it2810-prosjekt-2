@@ -35,3 +35,8 @@
     background-color: white;
   }
 
+  .ok {
+      position: absolute;
+      bottom: 0;
+  }
+
