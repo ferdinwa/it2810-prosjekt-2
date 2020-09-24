@@ -4,6 +4,7 @@ import './Frame.css';
 interface ImageSliderProps {
     imageHandleClick: () => void;
     index: number;
+    display: string;
 }
 
 interface ImageSliderState {
@@ -12,18 +13,14 @@ interface ImageSliderState {
 }
 
 export default class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
-    images = [
-        "/whale.svg",
-        "/summer.svg",
-        "/heart.svg"
-    ]
 
     render() {
         return (
             <div>
                 <div >
                     <img
-                        src={this.images[this.props.index]}
+                        className="image"
+                        src={this.props.display}
                         alt="" />
                 </div>
                 <button onClick={this.props.imageHandleClick}> Bilde </button>
