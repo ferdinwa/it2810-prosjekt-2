@@ -1,4 +1,5 @@
 import React from "react"
+import './Frame.css'
 /*import { stringify } from "querystring";*/
 import './Slider.css'
 
@@ -52,8 +53,10 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
                     <div className="poem"> {this.makeText(this.props.index)} </div>
                 </div>
                 <div>
-                    <button onClick={this.props.textHandleClick} className="textbutton" > Tekst </button>
+                    <button onClick={this.props.textHandleClick} className="textbutton ok" > Tekst </button>
                 </div>
+
+
             </div>
         )
     }
