@@ -12,7 +12,7 @@ interface ImageSliderState {
     index: number;
 }
 
-export default class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
+export default class ImageSlider extends React.Component<any, ImageSliderProps, ImageSliderState> {
 
     render() {
         return (

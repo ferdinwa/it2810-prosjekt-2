@@ -12,7 +12,7 @@ interface TextSliderState {
     index: number;
 }
 
-export default class textSlider extends React.Component<TextSliderProps, TextSliderState> {
+export default class textSlider extends React.Component<any, TextSliderProps, TextSliderState> {
     poems = [
         "https://poetrydb.org/title/Not at Home to Callers/.json",
         "https://poetrydb.org/title/The words the happy say/.json",
