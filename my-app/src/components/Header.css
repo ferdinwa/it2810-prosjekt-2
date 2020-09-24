@@ -1,9 +1,9 @@
 .grid-container {
     display: grid;
     grid-column-gap: auto;
-    grid-template-rows: 70px 300px;
+    grid-template-rows: 70px 200px;
     grid-template-columns: auto; 
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 
 
@@ -14,7 +14,7 @@
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 40px;
     height: 500px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 

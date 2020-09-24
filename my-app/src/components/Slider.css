@@ -1,0 +1,64 @@
+.poem {
+    position: absolute;
+    bottom:0;
+    left: 400;
+    margin-bottom: 54px;
+    margin-left: 50px;
+
+    
+}
+
+.wrap {
+    height: 400px;
+    width: 400px;
+    border-color: black;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    background-color: white;
+}
+
+.image {
+    border-color: black;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    background-color: white;
+}
+
+/*button {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    color: #3498db;
+    transition: 0.8s;
+}
+
+button:hover {
+    color: #fff; 
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #3498db;
+    
+}*/
+
+.imagebutton {
+    margin-top: 5px;
+    margin-left: 196px;
+}
+
+.textbutton {
+    margin-top: 9px;
+    margin-left: 196px;
+}
+

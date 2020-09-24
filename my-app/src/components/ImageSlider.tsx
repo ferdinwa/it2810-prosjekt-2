@@ -1,5 +1,5 @@
 import React from 'react'
-import './Frame.css';
+import './Slider.css';
 
 interface ImageSliderProps {
     imageHandleClick: () => void;
@@ -13,7 +13,6 @@ interface ImageSliderState {
 }
 
 export default class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
-
     render() {
         return (
             <div>
@@ -23,7 +22,7 @@ export default class ImageSlider extends React.Component<ImageSliderProps, Image
                         src={this.props.display}
                         alt="" />
                 </div>
-                <button onClick={this.props.imageHandleClick}> Bilde </button>
+                <button onClick={this.props.imageHandleClick} className="imagebutton"> Bilde </button>
             </div>
         )
     }
