@@ -185,14 +185,14 @@ export default class App extends React.Component<{}, AppState>  {
           handleSunClick={this.handleSunClick}
         />
         <div className="container">
-          <div className="wrapper element">
+          <div className="wrapper">
 
-            <div>
+            <div className="element">
               <ImageSlider display={this.state.displayed_picture} index={this.state.image_index} imageHandleClick={this.imageHandleClick} />
             </div>
           </div>
-          <div className="wrapper element">
-            <div >
+          <div className="wrapper">
+            <div className="element" >
               <TextSlider index={this.state.text_index} textHandleClick={this.textHandleClick} />
             </div>
 
