@@ -1,40 +1,32 @@
 import React from 'react'
 import './Frame.css';
 
-export default class ImageSlider extends React.Component {
-    state = {
-        images: [
-            "/whale.svg",
-            "/summer.svg",
-            "/heart.svg"
-        ],
-        index: 0
-    };
+interface ImageSliderProps {
+    imageHandleClick: () => void;
+    index: number;
+}
 
-    handleNext = () => {
-        if (this.state.index === 2) {
-            this.setState({
-                index: 0
-            })
-        }
-        else {
-            this.setState({
-                index: this.state.index + 1
-            })
-        }
+interface ImageSliderState {
+    images: string[];
+    index: number;
+}
 
-    }
+export default class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
+    images = [
+        "/whale.svg",
+        "/summer.svg",
+        "/heart.svg"
+    ]
 
     render() {
         return (
             <div>
                 <div >
                     <img
-                        className="image"
-                        src={this.state.images[this.state.index]}
+                        src={this.images[this.props.index]}
                         alt="" />
                 </div>
-                <button onClick={this.handleNext}> Bilde </button>
+                <button onClick={this.props.imageHandleClick}> Bilde </button>
             </div>
         )
     }

@@ -6,10 +6,26 @@
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 400px;
-    justify-content: center;
-    grid-row-gap: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+.text {
+    width: 400px;
+    height: 400px;
+
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
 }
 
