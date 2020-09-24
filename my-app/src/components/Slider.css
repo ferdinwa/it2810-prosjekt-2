@@ -26,7 +26,11 @@
     background-color: white;
 }
 
+<<<<<<< HEAD
 button {
+=======
+/*button {
+>>>>>>> frame
     border: 1px solid #3498db;
     background: none;
     padding: 10px 20px;
@@ -50,7 +54,11 @@ button::before {
     width: 100%;
     background: #3498db;
     
+<<<<<<< HEAD
 }
+=======
+}*/
+>>>>>>> frame
 
 .imagebutton {
     margin-top: 5px;
