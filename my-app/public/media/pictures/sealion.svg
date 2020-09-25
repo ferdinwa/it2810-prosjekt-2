@@ -202,5 +202,12 @@
     >
   </metadata
   >
+  <animateTransform attributeName="transform" 
+						attributeType="XML"
+						type="scale"
+        		from="1 1" 
+						to="0.8 0.8" 
+						dur="0.9s" 
+						repeatCount="indefinite"/>
 </svg
 >

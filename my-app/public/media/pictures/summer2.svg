@@ -214,6 +214,12 @@
             rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
         /></cc:License
       ></rdf:RDF
-    ></metadata
-  ></svg
->
+    ></metadata>
+    <animateTransform attributeName="transform" 
+						attributeType="XML"
+						type="skewX"
+        		from="0" 
+						to="20" 
+						dur="3s" 
+						repeatCount="indefinite"/>
+    </svg>

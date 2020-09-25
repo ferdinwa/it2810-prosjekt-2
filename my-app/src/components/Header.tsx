@@ -45,7 +45,7 @@ export default function Header(props: any): React.ReactElement {
     return (
         <div className="grid-container">
             <div className="Navbar">
-                <img src={require("../pictures/logo192.png")} className="Logo" alt="logo" onClick={props.handleLogoClick} />
+                <img src={require("../logo/logo192.png")} className="Logo" alt="logo" onClick={props.handleLogoClick} />
                 {(!isSmallScreen || isNavVisible) && (
                     <nav className="Nav">
                         <button className="theme" id="love" onClick={props.handleLoveClick}>&#128150;</button>

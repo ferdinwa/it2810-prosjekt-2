@@ -67,31 +67,73 @@ exports[`Test App 1`] = `
     className="container"
   >
     <div
-      className="img"
+      className="wrapper"
     >
       <div>
         <div>
-          <img
-            alt=""
-            className="image"
-            src=""
-          />
+          <div>
+            <img
+              alt=""
+              className="image"
+              src="media/amigogrande3.jpg"
+            />
+          </div>
+          <button
+            className="imagebutton ok"
+            onClick={[Function]}
+          >
+            Bilde
+          </button>
         </div>
-        <button
-          onClick={[Function]}
-        >
-           Bilde 
-        </button>
       </div>
     </div>
     <div
-      className="text"
+      className="wrapper"
     >
       <div>
+        <div>
+          <div
+            className="wrap"
+          >
+            <div
+              className="poem"
+            >
+               
+               
+            </div>
+          </div>
+          <div>
+            <button
+              className="textbutton ok"
+              onClick={[Function]}
+            >
+               Tekst 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="framecontainer"
+  >
+    <div
+      className="audiocontainer"
+    >
+      <div>
+        <audio
+          autoPlay={true}
+          controls={true}
+          src="amigolyd.mp3"
+        />
+      </div>
+      <div
+        className="audiobutton"
+      >
         <button
           onClick={[Function]}
         >
-           Tekst 
+          Lyd
         </button>
       </div>
     </div>

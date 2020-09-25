@@ -102,5 +102,12 @@
   <path label="Capa 1" opacity="0.83857" fill="rgb(0, 0, 0)" transform="matrix(0.649209 -0.198436 0.198436 0.649209 61.1533 -17.1344)" d="M244.28591,306.53854C244.28591,313.28431 238.48085,318.75284 231.31996,318.75284C224.15907,318.75284 218.35402,313.28431 218.35402,306.53854C218.35402,299.79277 224.15907,294.32425 231.31996,294.32425C238.48085,294.32425 244.28591,299.79277 244.28591,306.53854z" id="imagebot_95"/>
   <path label="Capa 1" opacity="0.83857" fill="rgb(0, 0, 0)" id="imagebot_94" d="M244.28591,306.53854C244.28591,313.28431 238.48085,318.75284 231.31996,318.75284C224.15907,318.75284 218.35402,313.28431 218.35402,306.53854C218.35402,299.79277 224.15907,294.32425 231.31996,294.32425C238.48085,294.32425 244.28591,299.79277 244.28591,306.53854z" transform="matrix(0.649209 -0.198436 0.198436 0.649209 122.714 -35.9508)"/>
  </g>
+ <animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 0 0"
+                          to="360 0 0"
+                          dur="8s"
+						  repeatCount="indefinite"/>
  <metadata>image/svg+xmlOpenclipartFish icons2013-08-02T15:38:32Fish iconshttps://openclipart.org/detail/181436/fish-icons-by-vectorsme-181436vectorsmefree Fish icons</metadata>
 </svg>
