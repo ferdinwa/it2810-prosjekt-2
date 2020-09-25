@@ -1,0 +1,11 @@
+.audiocontainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 5px;
+    
+}
+
+.audiobutton {
+    margin-left: 135px;
+}

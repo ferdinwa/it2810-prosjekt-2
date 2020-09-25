@@ -25,8 +25,8 @@ export default class App extends React.Component<{}, AppState>  {
       image_index: Number(sessionStorage.getItem("index")) || 0,
       text_index: 0,
       sound_index: 0,
-      displayed_picture: sessionStorage.getItem("picture") || "",
-      displayed_sound: "",
+      displayed_picture: sessionStorage.getItem("picture") || "summer.svg",
+      displayed_sound: "amigolyd.mp3",
       background: localStorage.getItem("background") || "",
       color: localStorage.getItem("color") || "",
       title: localStorage.getItem("title") || "Kul utstilling",
@@ -147,8 +147,8 @@ export default class App extends React.Component<{}, AppState>  {
     let titles = ["Kul utstilling", "Skikkelig kul", "Den var fin", "Megastilig greie"]
     this.setState({ background: "white" });
     this.setState({ color: "black" });
-    this.setState({ displayed_picture: "" });
-    this.setState({ displayed_sound: "" });
+    this.setState({ displayed_picture: "sealion.svg" });
+    this.setState({ displayed_sound: "amigolyd.mp3" });
     this.setState({ chosen_picture_list: [] });
     this.setState({ chosen_sound_list: [] })
 
@@ -187,19 +187,19 @@ export default class App extends React.Component<{}, AppState>  {
         <div className="container">
           <div className="wrapper">
 
-            <div className="element">
+            <div>
               <ImageSlider display={this.state.displayed_picture} index={this.state.image_index} imageHandleClick={this.imageHandleClick} />
             </div>
           </div>
           <div className="wrapper">
-            <div className="element" >
+            <div>
               <TextSlider index={this.state.text_index} textHandleClick={this.textHandleClick} />
             </div>
 
           </div>
-          <div className="element">
-            <Sound sound={this.state.displayed_sound} index={this.state.sound_index} soundHandleClick={this.soundHandleClick} />
-          </div>
+        </div>
+        <div className="framecontainer">
+          <Sound sound={this.state.displayed_sound} index={this.state.sound_index} soundHandleClick={this.soundHandleClick} />
         </div>
       </div>
     );

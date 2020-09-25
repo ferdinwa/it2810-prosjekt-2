@@ -1,5 +1,4 @@
 import React from "react"
-import './Frame.css'
 /*import { stringify } from "querystring";*/
 import './Slider.css'
 
@@ -41,7 +40,7 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
             return (this.data.map((list: string[], index: number) => [list.map((line: string, index: number) => <p key={index}>{line}</p>)])[index]);
         }
         else {
-            return <p> ... loading ...</p>
+            return <p> ... loading ... </p>
         }
     }
 

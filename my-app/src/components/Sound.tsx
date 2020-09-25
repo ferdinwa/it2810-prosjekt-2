@@ -1,4 +1,5 @@
 import React from 'react';
+import './Sound.css'
 
 
 interface SoundProps {
@@ -11,9 +12,14 @@ export default class Sound extends React.Component<SoundProps, {}> {
 
     render() {
         return (
-            <div>
-                <audio src={this.props.sound} controls></audio>
-                <button onClick={this.props.soundHandleClick}>Lyd</button>
+            <div className="audiocontainer">
+                <div>
+                    <audio src={this.props.sound} controls autoPlay></audio>
+                </div>
+                <div className="audiobutton">
+                    <button onClick={this.props.soundHandleClick}>Lyd</button>
+                </div>
+
             </div>
         )
     }

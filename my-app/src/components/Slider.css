@@ -22,6 +22,8 @@
     border-top-style: solid;
     border-bottom-style: solid;
     background-color: white;
+    height: 400px;
+    width: 400px;
 }
 
 /*button {
@@ -55,7 +57,7 @@ button::before {
 
 .imagebutton {
     margin-top: 5px;
-    margin-left: 196px;
+    margin-left: 140px;
 }
 
 .textbutton {
