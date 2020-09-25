@@ -5,6 +5,12 @@
     flex-direction: column;
 }
 
+p {
+    font-family: "Bradley Hand";
+    font-size: large;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -12,7 +18,7 @@
     justify-content: center;
     width: 800px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .framecontainer {
@@ -35,7 +41,18 @@
 
 @media (max-width: 700px) {
     .container{
+        width: 400px;
         flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .framecontainer {
+    justify-content: center;
+    position: relative;
+    margin: auto;
     }
 }
+
 
