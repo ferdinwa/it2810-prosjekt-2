@@ -138,3 +138,16 @@
         display: block;
     }
 }
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (orientation: portrait) { 
+
+    .grid-container {
+        margin-bottom: 200px;
+    }
+
+
+}

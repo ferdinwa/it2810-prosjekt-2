@@ -9,25 +9,20 @@
 .wrap {
     height: 400px;
     width: 400px;
-    border-color: black;
-    border-right-style: solid;
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border: 4mm ridge rgba(50, 138, 220, 0.6);
+    border-left-style: none;
     background-color: white;
 }
 
 .image {
-    border-color: black;
-    border-left-style: solid;
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border: 4mm ridge rgba(50, 138, 220, 0.6);
+    border-right-style: none;
     background-color: white;
     height: 400px;
     width: 400px;
 }
 
-/*button {
-
+button {
     border: 1px solid #3498db;
     background: none;
     padding: 10px 20px;
@@ -37,31 +32,56 @@
     margin: 10px;
     color: #3498db;
     transition: 0.8s;
+    width: 126px;
+    height: 45px;
 }
 
 button:hover {
     color: #fff; 
 }
 
-button::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #3498db;
-}
-
-}*/
-
-
 .imagebutton {
     margin-top: 5px;
-    margin-left: 140px;
+    margin-left: 137px;
 }
 
 .textbutton {
     margin-top: 9px;
-    margin-left: 196px;
+    margin-left: 137px;
 }
 
+@media (max-width: 700px) {
+    .wrap {
+        border: 4mm ridge rgba(50, 138, 220, 0.6);
+        border-top-style: none;
+    }
+
+    .image {
+        border: 4mm ridge rgba(50, 138, 220, 0.6);
+        border-bottom-style: none;
+    }
+
+    .imagebutton {
+        margin-top: 455px;
+        margin-left: 136px;
+    }
+
+    .textbutton {
+        margin-top: 9px;
+        margin-left: 136px;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (orientation: landscape) { 
+
+    .poem {
+        margin-top: 100px;
+        margin-bottom: none;
+    }
+
+    
+}

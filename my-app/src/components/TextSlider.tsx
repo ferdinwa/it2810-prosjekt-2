@@ -37,7 +37,7 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
 
     makeText(index: number) {
         if (this.data != null) {
-            return (this.data.map((list: string[], index: number) => [list.map((line: string, index: number) => <p key={index}>{line}</p>)])[index]);
+            return (this.data.map((list: string[], index: number) => [list.map((line: string, index: number) => <p>{line}</p>)])[index]);
         }
         else {
             return <p> ... loading ... </p>
@@ -52,7 +52,7 @@ export default class textSlider extends React.Component<any, TextSliderProps, Te
                     <div className="poem"> {this.makeText(this.props.index)} </div>
                 </div>
                 <div>
-                    <button onClick={this.props.textHandleClick} className="textbutton ok" > Tekst </button>
+                    <button onClick={this.props.textHandleClick} className="textbutton" > Bytt tekst </button>
                 </div>
 
 

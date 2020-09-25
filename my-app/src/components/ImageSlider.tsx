@@ -21,7 +21,7 @@ export default class ImageSlider extends React.Component<ImageSliderProps, Image
                         src={this.props.display}
                         alt="" />
                 </div>
-                <button className="imagebutton ok" onClick={this.props.imageHandleClick}>Bilde</button>
+                <button className="imagebutton" onClick={this.props.imageHandleClick}>Bytt bilde</button>
 
             </div>
         )

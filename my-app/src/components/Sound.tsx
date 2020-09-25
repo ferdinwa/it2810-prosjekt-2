@@ -17,7 +17,7 @@ export default class Sound extends React.Component<SoundProps, {}> {
                     <audio src={this.props.sound} controls autoPlay></audio>
                 </div>
                 <div className="audiobutton">
-                    <button onClick={this.props.soundHandleClick}>Lyd</button>
+                    <button onClick={this.props.soundHandleClick}>Bytt lyd</button>
                 </div>
 
             </div>
