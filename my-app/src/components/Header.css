@@ -25,6 +25,8 @@
     grid-template-areas: "logo nav";
     box-shadow: 0 4px 8px 0 #00000033;
     z-index: 10;
+    background-color: #3498db;
+    margin-left: -8px;
 }
 
 .Logo {
@@ -111,6 +113,7 @@
     background: none;
     outline: none;
     transition: 0.1s;
+    margin-top: 10px;
 }
 
 .Lion:active {
@@ -126,9 +129,8 @@
         grid-template-rows: repeat(4, auto);
         grid-template-columns: none;
         grid-row-gap: 20px;
-
         padding: 30px 0 30px;
-        background-color:ghostwhite;
+        background-color:#8bd1ff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;

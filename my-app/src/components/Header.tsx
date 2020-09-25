@@ -9,12 +9,12 @@ export default function Header(props: any): React.ReactElement {
     //const [background, setBackground] = useState<string>(localStorage.getItem("background") || "");
     //const [color, setColor] = useState<string>(props.color);
 
-    
+
     useEffect(() => {
         document.body.style.background = props.background;
         document.body.style.color = props.color;
-        }, [props.background, props.color]);
-    
+    }, [props.background, props.color]);
+
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 700px)");
@@ -38,7 +38,7 @@ export default function Header(props: any): React.ReactElement {
         setIsNavVisible(!isNavVisible);
     };
 
-    
+
 
 
 
@@ -46,7 +46,7 @@ export default function Header(props: any): React.ReactElement {
         <div className="grid-container">
             <div className="Navbar">
                 <img src={require("../logo/logo192.png")} className="Logo" alt="logo" onClick={props.handleLogoClick} />
-                {(!isSmallScreen || isNavVisible) && (
+                {(!isSmallScreen || !isNavVisible) && (
                     <nav className="Nav">
                         <button className="theme" id="love" onClick={props.handleLoveClick}>&#128150;</button>
                         <button className="theme" id="whale" onClick={props.handleWhaleClick}>&#128011;</button>
