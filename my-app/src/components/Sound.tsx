@@ -9,7 +9,7 @@ interface SoundProps {
     sound: string;
 }
 
-export default class Sound extends React.Component<SoundProps, {}> {
+export default class Sound extends React.Component<any, SoundProps, {}> {
     //Class to render the audio-object. Uses props from App.tsx to display pictures
     //Button to change the song.  
     render() {

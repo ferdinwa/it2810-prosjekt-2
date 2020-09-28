@@ -8,8 +8,10 @@ exports[`Test Header 1`] = `
       className="image"
     />
   </div>
-  <button>
-     Bilde 
+  <button
+    className="imagebutton"
+  >
+    Bytt bilde
   </button>
 </div>
 `;

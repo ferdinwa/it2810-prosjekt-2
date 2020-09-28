@@ -75,14 +75,14 @@ exports[`Test App 1`] = `
             <img
               alt=""
               className="image"
-              src="media/amigogrande3.jpg"
+              src="media/pictures/amigogrande.jpg"
             />
           </div>
           <button
-            className="imagebutton ok"
+            className="imagebutton"
             onClick={[Function]}
           >
-            Bilde
+            Bytt bilde
           </button>
         </div>
       </div>
@@ -93,7 +93,7 @@ exports[`Test App 1`] = `
       <div>
         <div>
           <div
-            className="wrap"
+            className="text"
           >
             <div
               className="poem"
@@ -104,10 +104,10 @@ exports[`Test App 1`] = `
           </div>
           <div>
             <button
-              className="textbutton ok"
+              className="textbutton"
               onClick={[Function]}
             >
-               Tekst 
+               Bytt tekst 
             </button>
           </div>
         </div>
@@ -124,7 +124,7 @@ exports[`Test App 1`] = `
         <audio
           autoPlay={true}
           controls={true}
-          src="amigolyd.mp3"
+          src="media/sound/amigolyd.mp3"
         />
       </div>
       <div
@@ -133,7 +133,7 @@ exports[`Test App 1`] = `
         <button
           onClick={[Function]}
         >
-          Lyd
+          Bytt lyd
         </button>
       </div>
     </div>
