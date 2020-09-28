@@ -37,7 +37,7 @@ export default class TextSlider extends React.Component<any, TextSliderProps, Te
                     this.data.push(result[0].lines)
                 });
         }
-    };
+    }
 
     makeText(index: number) {
         //Maps the given poem to paragraphs with the lines in the poem
