@@ -1,38 +1,52 @@
+
 .App {
-  text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+    font-family: "Bradley Hand";
+    font-size: large;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    width: 800px;
+    position: relative;
+    margin-bottom: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.framecontainer {
+    justify-content: center;
+    position: relative;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.wrapper {
+    width: 400px;
+    height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 850px) {
+    .container{
+        width: 400px;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .framecontainer {
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    }
 }
+
+

@@ -1,0 +1,155 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: auto;
+    grid-template-rows: 70px 200px;
+    grid-template-columns: auto; 
+    margin-bottom: 10px;
+
+}
+
+.Title {
+    display: grid;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    max-height: 70px;
+    width: 100vw;
+    display: grid; /*generates block level grid*/
+    grid-template-areas: "logo nav";
+    box-shadow: 0 4px 8px 0 #00000033;
+    z-index: 10;
+    background-color: #3498db;
+    margin-left: -8px;
+}
+
+.Logo {
+    grid-area: logo;
+    height: 70px;
+    transition: 1s;
+}
+
+.Logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.Nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.theme {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+#love {
+    background-color: pink;
+}
+
+#whale {
+    background-color: lightblue;
+}
+
+#sun {
+    background-color: lightyellow;
+}
+
+.theme:hover {
+    transform: scale(1.4);
+}
+
+.save {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(33, 233, 27, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(33, 233, 27, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+}
+
+.save:hover {
+    background-color: rgba(247, 9, 227, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(247, 9, 227, 0.5);
+}
+
+.save:active {
+    transform: translateY(5px);
+}
+
+.Lion {
+    display: none;
+    grid-area: lion;
+    margin: 0 20px 0 0;
+    padding: 0;
+    justify-self: end;
+    font-size: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.1s;
+    margin-top: 10px;
+}
+
+.Lion:active {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 850px) {
+    .Navbar {
+        grid-template-areas: "logo lion" "nav nav";
+    }
+    .Nav  {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+        padding: 30px 0 30px;
+        background-color:#8bd1ff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+    }
+    .Lion {
+        display: block;
+    }
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (orientation: portrait) { 
+
+    .grid-container {
+        margin-bottom: 200px;
+    }
+
+
+}

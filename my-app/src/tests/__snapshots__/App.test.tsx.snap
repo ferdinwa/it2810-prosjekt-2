@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App 1`] = `
+<div
+  className="App"
+  data-observe-resize={true}
+>
+  <div
+    className="grid-container"
+  >
+    <div
+      className="Navbar"
+    >
+      <img
+        alt="logo"
+        className="Logo"
+        onClick={[Function]}
+        src="logo192.png"
+      />
+      <nav
+        className="Nav"
+      >
+        <button
+          className="theme"
+          id="love"
+          onClick={[Function]}
+        >
+          💖
+        </button>
+        <button
+          className="theme"
+          id="whale"
+          onClick={[Function]}
+        >
+          🐋
+        </button>
+        <button
+          className="theme"
+          id="sun"
+          onClick={[Function]}
+        >
+          😎
+        </button>
+        <button
+          className="save"
+          onClick={[Function]}
+        >
+          Lagre
+        </button>
+      </nav>
+      <button
+        className="Lion"
+        onClick={[Function]}
+      >
+        🦁
+      </button>
+    </div>
+    <div
+      className="Title"
+    >
+      <h1>
+        Kul utstilling
+      </h1>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="wrapper"
+    >
+      <div>
+        <div>
+          <div>
+            <img
+              alt=""
+              className="image"
+              src="media/pictures/amigogrande.jpg"
+            />
+          </div>
+          <button
+            className="imagebutton"
+            onClick={[Function]}
+          >
+            Bytt bilde
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div>
+        <div>
+          <div
+            className="text"
+          >
+            <div
+              className="poem"
+            >
+               
+               
+            </div>
+          </div>
+          <div>
+            <button
+              className="textbutton"
+              onClick={[Function]}
+            >
+               Bytt tekst 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="framecontainer"
+  >
+    <div
+      className="audiocontainer"
+    >
+      <div>
+        <audio
+          autoPlay={true}
+          controls={true}
+          src="media/sound/amigolyd.mp3"
+        />
+      </div>
+      <div
+        className="audiobutton"
+      >
+        <button
+          onClick={[Function]}
+        >
+          Bytt lyd
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

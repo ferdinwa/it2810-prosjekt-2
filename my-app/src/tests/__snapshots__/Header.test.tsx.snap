@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header 1`] = `
+<div
+  className="grid-container"
+>
+  <div
+    className="Navbar"
+  >
+    <img
+      alt="logo"
+      className="Logo"
+      src="logo192.png"
+    />
+    <nav
+      className="Nav"
+    >
+      <button
+        className="theme"
+        id="love"
+      >
+        💖
+      </button>
+      <button
+        className="theme"
+        id="whale"
+      >
+        🐋
+      </button>
+      <button
+        className="theme"
+        id="sun"
+      >
+        😎
+      </button>
+      <button
+        className="save"
+      >
+        Lagre
+      </button>
+    </nav>
+    <button
+      className="Lion"
+      onClick={[Function]}
+    >
+      🦁
+    </button>
+  </div>
+  <div
+    className="Title"
+  >
+    <h1 />
+  </div>
+</div>
+`;
