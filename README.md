@@ -25,7 +25,8 @@ med et ironisk blikk. Utstillingen er implementert som en single page applicatio
 Siden består av en ramme der bilder og tekst dukker opp, og et lydfelt for å spille av lyd. 
 Utstillingen baserer seg på at brukeren kan endre tema, og dermed endre hvilke bilder og lyder som vises. 
 Tema velges ved hjelp av knappene i headeren, og under hvert tema kan man velge mellom 3 ulike bilder og 3 ulike lyder. 
-De tre temaene som kan velges er kjærlighet, sjø og sommer. I tillegg har vi en logo som kan trykkes for endring av tittel.
+De tre temaene som kan velges er kjærlighet, sjø og sommer. Om React-logoen oppe i venstre hjørne klikkes, vil man komme tilbake til start-tema. I tillegg vil det
+det i tillegg endres tittel på utstillingen. 
 For mindre skjermer vil navbaren endres, og det dukker opp en løve der man kan velge om man vil vise navbaren eller ikke.
 Det er også mulig å bytte tekst. Disse interne byttene gjøres med egne knapper, som er plassert nederst på siden. 
 
@@ -104,6 +105,7 @@ componentDidMount() {
     }
 
 ```
+For å få de forskjellige sangene har vi brukt audio-taggen fra HTML5.
 
 ### Node og NPM
 
