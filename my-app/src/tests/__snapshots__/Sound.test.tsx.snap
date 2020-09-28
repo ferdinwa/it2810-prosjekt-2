@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Sound 1`] = `
+<div
+  className="audiocontainer"
+>
+  <div>
+    <audio
+      autoPlay={true}
+      controls={true}
+    />
+  </div>
+  <div
+    className="audiobutton"
+  >
+    <button>
+      Bytt lyd
+    </button>
+  </div>
+</div>
+`;
