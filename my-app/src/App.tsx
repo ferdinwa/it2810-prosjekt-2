@@ -31,7 +31,7 @@ export default class App extends React.Component<{}, AppState>  {
       color: localStorage.getItem("color") || "",
       title: sessionStorage.getItem("title") || "Kul utstilling",
       chosen_sound_list: ["media/sound/stian1.mp3", "media/sound/stian2.mp3", "media/sound/amigolyd.mp3"],
-      chosen_picture_list: ["media/pictures/amigogrande3.jpg","media/pictures/amigogrande2.jpg","media/pictures/amigogrande.jpg"]
+      chosen_picture_list: ["media/pictures/amigogrande3.jpg", "media/pictures/amigogrande2.jpg", "media/pictures/amigogrande.jpg"]
     }
     this.textHandleClick = this.textHandleClick.bind(this);
     this.imageHandleClick = this.imageHandleClick.bind(this);
@@ -47,7 +47,7 @@ export default class App extends React.Component<{}, AppState>  {
     ["media/pictures/loveguy.svg", "media/pictures/heart2.svg", "media/pictures/lovegiraffe.svg"],
     ["media/pictures/whale.svg", "media/pictures/sealion.svg", "media/pictures/crab.svg"],
     ["media/pictures/summer.svg", "media/pictures/summer2.svg", "media/pictures/summer3.svg"],
-    ["media/pictures/amigogrande2.jpg","media/pictures/amigogrande3.jpg","media/pictures/amigogrande.jpg",]
+    ["media/pictures/amigogrande2.jpg", "media/pictures/amigogrande3.jpg", "media/pictures/amigogrande.jpg",]
   ]
 
   sounds = [
@@ -145,7 +145,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ displayed_sound: "media/sound/amigolyd.mp3" });
     this.setState({ chosen_picture_list: this.images[3] });
     this.setState({ chosen_sound_list: ["media/sound/stian1.mp3", "media/sound/stian2.mp3", "media/sound/amigolyd.mp3"] })
-    
+
 
     if (this.state.title === titles[0]) {
       sessionStorage.setItem("title", titles[1]);
@@ -163,7 +163,7 @@ export default class App extends React.Component<{}, AppState>  {
       sessionStorage.setItem("title", titles[0]);
       this.setState({ title: sessionStorage.getItem("title")! })
     }
-    
+
   }
 
   handleSaveClick() {
