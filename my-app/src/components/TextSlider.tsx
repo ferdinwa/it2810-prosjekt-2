@@ -50,7 +50,6 @@ export default class TextSlider extends React.Component<any, TextSliderProps, Te
         }
     }
 
-
     render() {
         return (
             <div>
