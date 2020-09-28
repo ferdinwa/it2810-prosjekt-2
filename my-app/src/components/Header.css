@@ -121,7 +121,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .Navbar {
         grid-template-areas: "logo lion" "nav nav";
     }
