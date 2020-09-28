@@ -14,7 +14,7 @@ export default function Header(props: any): React.ReactElement {
         document.body.style.color = props.color;
     }, [props.background, props.color]);
 
-
+    //Mediaquery to handle different screen-sizes
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 850px)");
         mediaQuery.addListener(handleMediaQueryChange);
@@ -25,6 +25,7 @@ export default function Header(props: any): React.ReactElement {
         };
     }, []);
 
+    //set state when mediaquery matches
     const handleMediaQueryChange = (mediaQuery: any) => {
         if (mediaQuery.matches) {
             setIsSmallScreen(true);
@@ -32,15 +33,12 @@ export default function Header(props: any): React.ReactElement {
             setIsSmallScreen(false);
         }
     };
-
+    
+    //toggle nav
     const toggleNav = () => {
         setIsNavVisible(!isNavVisible);
     };
-
-
-
-
-
+    
     return (
         <div className="grid-container">
             <div className="Navbar">

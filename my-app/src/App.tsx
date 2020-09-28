@@ -6,6 +6,7 @@ import ImageSlider from './components/ImageSlider';
 import TextSlider from './components/TextSlider'
 
 interface AppState {
+  //Interface for state in App
   image_index: number,
   text_index: number,
   displayed_picture: string,
@@ -57,6 +58,7 @@ export default class App extends React.Component<{}, AppState>  {
     ["media/sound/amigo.mp3", "media/sound/stian1.mp3", "media/sound/stian2.mp3"]
   ]
 
+  //handle click on text-button
   textHandleClick() {
     if (this.state.text_index === 2) {
       this.setState({
@@ -70,6 +72,7 @@ export default class App extends React.Component<{}, AppState>  {
     }
   }
 
+  //handle click on sound-button
   soundHandleClick() {
     if (this.state.sound_index === 2) {
       this.setState({
@@ -84,6 +87,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ displayed_sound: this.state.chosen_sound_list[this.state.sound_index] });
   }
 
+  //handle click on image-button
   imageHandleClick() {
     if (this.state.image_index === 2) {
       this.setState({
