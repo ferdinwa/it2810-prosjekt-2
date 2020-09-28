@@ -1,7 +1,7 @@
 # Prosjekt 2 - Gruppe 77
 
 *  [Intro](#intro)
-*  [Innhold og funkskjonalitet](#innhold-og-funksjonalitet)
+*  [Innhold og funksjonalitet](#innhold-og-funksjonalitet)
     *   [Generelt](#generelt)
     *   [Rettigheter](#rettigheter)
 *  [Krav til teknologi](#krav-til-teknologi)
@@ -25,7 +25,8 @@ med et ironisk blikk. Utstillingen er implementert som en single page applicatio
 Siden består av en ramme der bilder og tekst dukker opp, og et lydfelt for å spille av lyd. 
 Utstillingen baserer seg på at brukeren kan endre tema, og dermed endre hvilke bilder og lyder som vises. 
 Tema velges ved hjelp av knappene i headeren, og under hvert tema kan man velge mellom 3 ulike bilder og 3 ulike lyder. 
-De tre temaene som kan velges er kjærlighet, sjø og sommer. I tillegg har vi en logo som kan trykkes for endring av tittel. 
+De tre temaene som kan velges er kjærlighet, sjø og sommer. I tillegg har vi en logo som kan trykkes for endring av tittel.
+For mindre skjermer vil navbaren endres, og det dukker opp en løve der man kan velge om man vil vise navbaren eller ikke.
 Det er også mulig å bytte tekst. Disse interne byttene gjøres med egne knapper, som er plassert nederst på siden. 
 
 ### Rettigheter
@@ -54,7 +55,7 @@ Lydfilene er hentet fra YouTube. Under følger en liste med kilder for lydfilene
 
 Siden er implementert med React og TypeScript. Vi har i hovedsak valgt å benytte oss av class-components, men vi har også én funksjonell komponent - Header.tsx. 
 Vi har benyttet oss av noen ulike måter å type på, men i hovedsak har vi brukt interface for å deklarere type til state og props. 
-App.tsx er hovedklassen i applikasjonen, og den kommuniserer med de andre komponentene. 
+App.tsx er hovedklassen i applikasjonen, og den kommuniserer med alle de andre komponentene. 
 App.tsx holder styr på hvilket tema som er valgt, og hva som skjer ved bytte av bilde/lyd og tekst. Vi har implementert følgende komponentstruktur, som vi mener er hensiktsmessig i forhold til det oppgaven spør om (komponenter som kommuniserer med App.tsx):
 
 *  Header.tsx - navbar og overskrift, og endre tema ved klikk på “temaknapp”
@@ -79,7 +80,6 @@ to="0.8 0.8"
 dur="0.9s" 
 repeatCount="indefinite"/>
 ```
-
 
 ### AJAX
 
@@ -110,7 +110,8 @@ Følgende kommando ble kjørt i terminalen for å sette opp prosjektet med TypeS
 
 ### HTML Web Storage
 
-Ved å trykke på “lagre”-knappen øverst til høyre på siden, lagrer man bakgrunnsfarge og tekstfarge for gjeldende tema på siden, i tillegg til at gjeldende tittel blir lagret. Neste gang man besøker nettsiden, vil det være den lagrede bakgrunnsfargen, tekstfargen og tittelen som vil bli vist. Dette har vi fått til ved å bruke “Local Storage”. 
+Ved å trykke på “lagre”-knappen øverst til høyre på siden, lagrer man bakgrunnsfarge og tekstfarge for gjeldende tema på siden, i tillegg til at gjeldende tittel blir lagret. Neste gang man besøker nettsiden, vil det være den lagrede bakgrunnsfargen, tekstfargen og tittelen som vil bli vist. 
+Dette har vi fått til ved å bruke “Local Storage”. 
 Som nevnt tidligere vil man ved å trykke på React-logoen oppe til venstre på siden, endre mellom fire forskjellige titler på utstillingen. 
 Tittelen som til vises, vil til enhver tid være lagret i “Session Storage”. Dette bruker vi til vår fordel ved at tittel for utstillingen vil overleve en refresh av siden. 
 
