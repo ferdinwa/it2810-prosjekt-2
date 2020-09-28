@@ -137,7 +137,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ chosen_picture_list: this.images[2] });
     this.setState({ image_index: 1 })
     this.setState({ chosen_sound_list: this.sounds[2] });
-    this.setState({ background: "lightyellow" });
+    this.setState({ background: "yellow" });
     this.setState({ color: "orange" })
     this.setState({ sound_index: 1 })
     this.setState({ displayed_sound: this.sounds[2][0] })
