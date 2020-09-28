@@ -50,7 +50,7 @@ button:hover {
     margin-left: 137px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .text {
         border: 4mm ridge rgba(50, 138, 220, 0.6);
         border-top-style: none;

@@ -17,7 +17,7 @@ export default function Header(props: any): React.ReactElement {
 
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 700px)");
+        const mediaQuery = window.matchMedia("(max-width: 850px)");
         mediaQuery.addListener(handleMediaQueryChange);
         handleMediaQueryChange(mediaQuery);
 
