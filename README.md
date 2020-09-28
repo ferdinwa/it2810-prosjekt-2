@@ -73,7 +73,7 @@ Siden vi har en relativt lavt komponent-tre, har vi valgt å ikke implementere C
 ### SVG
 
 Bildene er SVG-filer hentet fra [nettet](https://publicdomainvectors.org/). 
-For å animere filene brukte vi <animateTransform>-metoden i SVG-filene, og ved å sette repeatCount=”indefinite”, fikk vi kontinuerlig bevegelse i bildene. 
+For å animere filene brukte vi animateTransform-metoden i SVG-filene, og ved å sette repeatCount=”indefinite”, fikk vi kontinuerlig bevegelse i bildene. 
 Eksempel på animasjon av et bilde: 
 
 ```js
