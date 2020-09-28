@@ -103,6 +103,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ displayed_picture: this.state.chosen_picture_list[this.state.image_index] })
   }
 
+  //Makes "love" the theme for the page. Fires when the heart in the header is clicked
   handleLoveClick() {
     this.setState({ displayed_picture: this.images[0][0] })
     this.setState({ chosen_picture_list: this.images[0] });
@@ -114,6 +115,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ sound_index: 1 })
   }
 
+  //Makes "Ocean" the theme for the page. Fires when the whale in the header is clicked 
   handleWhaleClick() {
     this.setState({ displayed_picture: this.images[1][0] })
     this.setState({ chosen_picture_list: this.images[1] });
@@ -125,6 +127,7 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ displayed_sound: this.sounds[1][0] })
   }
 
+  //Makes "summer" the theme for the site. Fires when the sun in the header is clicked
   handleSunClick() {
     this.setState({ displayed_picture: this.images[2][0] })
     this.setState({ chosen_picture_list: this.images[2] });
@@ -136,6 +139,8 @@ export default class App extends React.Component<{}, AppState>  {
     this.setState({ displayed_sound: this.sounds[2][0] })
   }
 
+  //Makes "amigo grande" the theme for the site, and changes between four different titles
+  //when the logo is pressed.
   handleLogoClick() {
     type titles = string[];
     let titles = ["Kul utstilling", "Skikkelig kul", "Den var fin", "Megastilig greie"]
@@ -166,6 +171,8 @@ export default class App extends React.Component<{}, AppState>  {
 
   }
 
+//Function that will get fired when "Lagre"-button is clicked. 
+//Stores several props in Local storage.
   handleSaveClick() {
     localStorage.setItem("background", this.state.background);
     localStorage.setItem("color", this.state.color);

@@ -6,10 +6,9 @@ export default function Header(props: any): React.ReactElement {
 
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-    //const [background, setBackground] = useState<string>(localStorage.getItem("background") || "");
-    //const [color, setColor] = useState<string>(props.color);
 
-
+    //Everytime background-color- and text-color-states changes, we will update the
+    //background and color for the whole page
     useEffect(() => {
         document.body.style.background = props.background;
         document.body.style.color = props.color;
