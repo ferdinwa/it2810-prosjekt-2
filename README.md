@@ -29,6 +29,10 @@ De tre temaene som kan velges er kjærlighet, sjø og sommer. I tillegg har vi e
 For mindre skjermer vil navbaren endres, og det dukker opp en løve der man kan velge om man vil vise navbaren eller ikke.
 Det er også mulig å bytte tekst. Disse interne byttene gjøres med egne knapper, som er plassert nederst på siden. 
 
+<div align="center">
+    <img src="/my-app/public/media/pictures/normal.png" align="center" height="400">
+</div>
+
 ### Rettigheter
 
 SVG-filene har vi hentet fra [publicdomainvectors.org](https://publicdomainvectors.org/).
@@ -118,7 +122,11 @@ Tittelen som til vises, vil til enhver tid være lagret i “Session Storage”.
 ### Responsive Web Design
 
 Nettsiden er implementert med responsive web design. Dette innebærer at layout, skalering og interaksjonsmulighetene endrer seg etter type enhet og størrelse på skjerm. 
-Under kommer beskrivelsen av bruken de ulike responsive design elementene og teknikkene. 
+Under kommer beskrivelsen av bruken de ulike responsive design elementene og teknikkene. Bildet under viser hvordan siden ser ut på en mobil enhet.
+
+<div align="center">
+    <img src="/my-app/public/media/pictures/mobile.png" align="center" height="400">
+</div>
 
 #### Bredde og høydeformat
 Vi valgte å displaye bildet og tekst i samme ramme, hvor begge er lagt inn i hver sin wrapper på 400px x 400px. 
